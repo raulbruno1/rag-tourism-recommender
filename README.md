@@ -33,8 +33,13 @@ El sistema utiliza un enfoque RAG, donde:
 2. El sistema recupera destinos relevantes desde la base vectorial.
 3. El modelo LLM genera una recomendación basada en la información recuperada.
 
-## Trabajo en equipo
-Proyecto desarrollado en grupo como parte de la materia Inteligencia Artificial.
+## Configuración de la API Key
 
-## Ejecución
-El proyecto fue desarrollado y ejecutado en Google Colab.
+Para ejecutar el proyecto es necesario contar con una API Key de Groq.
+
+1. Obtener una API key gratuita en: https://console.groq.com
+2. Configurar la variable de entorno antes de ejecutar el notebook:
+
+```python
+import os
+os.environ["GROQ_API_KEY"] = "TU_API_KEY"
